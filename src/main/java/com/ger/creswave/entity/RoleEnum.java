@@ -1,4 +1,7 @@
 package com.ger.creswave.entity;
 
-public class RoleEnum {
+public enum RoleEnum {
+    USER,
+    ADMIN
 }
+
