@@ -1,4 +1,4 @@
-User Management API
+**User Management API**
 Features
 •	Create new users
 •	A User account can CREATE, READ, UPDATE Posts
@@ -9,17 +9,18 @@ Features
  ● Implement pagination and sorting for blog posts and comments. 
 ● Implement search functionality to search for blog posts by title or content.
 
-Running the API
+**Running the API**
 This is a Spring Boot application. To run:
 Build with Maven
 Execute the JAR file
 API will run on port 8080 by default
-Testing
+**Testing**
 Unit and integration tests are included in the src/test directory. Run them with:
 mvn test
 The API can also be tested manually with cURL or Postman.
- APIs
-Create User
+
+** APIs**
+**Create User**
 POST /auth/signup
 Request:
 {
@@ -66,7 +67,7 @@ Response:
     "expiresIn": 3600000
 }
 
-Create Blog Posts
+**Create Blog Posts**
 POST /api/posts
 Request:
 {
@@ -92,7 +93,7 @@ PUT /api/posts/title
 Delete posts:
 DELETE /api/posts/title
 
-Create Comments:
+**Create Comments:**
 POST /api/v1/posts/1/comments
 Get all comments from a post Comments:
 GET /posts/{postId}/comments
