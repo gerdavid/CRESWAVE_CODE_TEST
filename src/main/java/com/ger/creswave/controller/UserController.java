@@ -22,7 +22,7 @@ public class UserController {
     }
 
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/me")
+    @GetMapping("/user")
     public ResponseEntity<User> authenticatedUser() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
